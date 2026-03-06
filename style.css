@@ -1,0 +1,66 @@
+body{
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg,#000000,#350146,#1d0123);
+height:100vh;
+margin:0;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+color:white;
+}
+
+h1{
+margin-bottom:20px;
+letter-spacing:2px;
+}
+
+.wheel-container{
+position:relative;
+width:500px;
+}
+
+canvas{
+border-radius:50%;
+box-shadow:0 15px 40px rgba(0,0,0,0.5);
+}
+
+.pointer{
+width:0;
+height:0;
+border-left:18px solid transparent;
+border-right:18px solid transparent;
+border-top:35px solid white;
+position:absolute;
+top:-5px;
+left:50%;
+transform:translateX(-50%);
+z-index:5;
+}
+
+#spinBtn{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:110px;
+height:110px;
+border-radius:50%;
+border:none;
+background:#111;
+color:white;
+font-size:18px;
+letter-spacing:1px;
+cursor:pointer;
+box-shadow:0 0 20px rgba(0,0,0,0.6);
+}
+
+#spinBtn:hover{
+transform:translate(-50%,-50%) scale(1.08);
+}
+
+#result{
+margin-top:30px;
+font-size:24px;
+font-weight:500;
+}
